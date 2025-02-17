@@ -1,5 +1,6 @@
-package com.example.informationsystemlab1.repository;
-import com.example.informationsystemlab1.classes.User;
+package com.coursework.repository;
+
+import com.coursework.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
