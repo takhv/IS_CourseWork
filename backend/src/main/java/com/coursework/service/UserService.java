@@ -1,9 +1,8 @@
-package com.example.informationsystemlab1.services;
+package com.coursework.service;
 
-
-import com.example.informationsystemlab1.classes.Role;
-import com.example.informationsystemlab1.classes.User;
-import com.example.informationsystemlab1.repository.UserRepository;
+import com.coursework.model.Role;
+import com.coursework.model.User;
+import com.coursework.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.context.SecurityContextHolder;

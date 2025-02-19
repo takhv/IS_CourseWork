@@ -1,7 +1,7 @@
-package com.example.informationsystemlab1;
+package com.coursework;
 
-import com.example.informationsystemlab1.services.JwtService;
-import com.example.informationsystemlab1.services.UserService;
+import com.coursework.service.JwtService;
+import com.coursework.service.UserService;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

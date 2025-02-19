@@ -1,9 +1,9 @@
-package com.example.informationsystemlab1.controllers;
+package com.coursework.controller;
 
-import com.example.informationsystemlab1.dto.request.SignInRequest;
-import com.example.informationsystemlab1.dto.request.SignUpRequest;
-import com.example.informationsystemlab1.dto.response.JwtAuthenticationResponse;
-import com.example.informationsystemlab1.services.AuthenticationService;
+import com.coursework.dto.request.SignInRequest;
+import com.coursework.dto.request.SignUpRequest;
+import com.coursework.dto.response.JwtAuthenticationResponse;
+import com.coursework.service.AuthenticationService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;

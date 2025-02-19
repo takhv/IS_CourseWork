@@ -1,7 +1,7 @@
-package com.example.informationsystemlab1.security;
+package com.coursework.security;
 
-import com.example.informationsystemlab1.JwtAuthenticationFilter;
-import com.example.informationsystemlab1.services.UserService;
+import com.coursework.JwtAuthenticationFilter;
+import com.coursework.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

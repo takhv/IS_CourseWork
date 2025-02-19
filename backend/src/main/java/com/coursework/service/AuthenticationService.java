@@ -1,10 +1,9 @@
-package com.example.informationsystemlab1.services;
+package com.coursework.service;
 
-import com.example.informationsystemlab1.classes.Role;
-import com.example.informationsystemlab1.classes.User;
-import com.example.informationsystemlab1.dto.request.SignInRequest;
-import com.example.informationsystemlab1.dto.request.SignUpRequest;
-import com.example.informationsystemlab1.dto.response.JwtAuthenticationResponse;
+import com.coursework.model.User;
+import com.coursework.dto.request.SignInRequest;
+import com.coursework.dto.request.SignUpRequest;
+import com.coursework.dto.response.JwtAuthenticationResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -26,7 +25,6 @@ public class AuthenticationService {
         var user = User.builder()
                 .username(request.getUsername())
                 .password(passwordEncoder.encode(request.getPassword()))
-                .role(Role.ROLE_USER)
                 .build();
         userService.create(user);
         var jwt = jwtService.generateToken(user);

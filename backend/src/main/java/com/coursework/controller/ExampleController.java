@@ -1,6 +1,6 @@
-package com.example.informationsystemlab1.controllers;
+package com.coursework.controller;
 
-import com.example.informationsystemlab1.services.UserService;
+import com.coursework.service.UserService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;

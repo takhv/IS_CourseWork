@@ -1,4 +1,4 @@
-package com.example.informationsystemlab1.classes;
+package com.coursework.model;
 
 public enum Role {
     ROLE_USER,

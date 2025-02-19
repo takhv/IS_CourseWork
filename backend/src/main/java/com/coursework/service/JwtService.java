@@ -1,19 +1,15 @@
-package com.example.informationsystemlab1.services;
+package com.coursework.service;
 
-import com.example.informationsystemlab1.classes.User;
+import com.coursework.model.User;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
-import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.autoconfigure.ssl.SslBundleProperties;
 import org.springframework.cglib.core.internal.Function;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
 
-
-import java.awt.*;
 import java.security.Key;
 import java.util.Date;
 import java.util.HashMap;
@@ -40,7 +36,7 @@ public class JwtService {
         if (userDetails instanceof User customUserDetails){
             claims.put("id", customUserDetails.getId());
             claims.put("username", customUserDetails.getUsername());
-            claims.put("role", customUserDetails.getRole());
+            // claims.put("role", customUserDetails.getRole());
         }
         return generateToken(claims, userDetails);
     }
@@ -67,7 +63,7 @@ public class JwtService {
         return Jwts.builder().setClaims(extraClaims).setSubject(userDetails.getUsername())
                 .setIssuedAt(new Date(System.currentTimeMillis()))
                 .setExpiration(new Date(System.currentTimeMillis() + 100000 * 60 * 24))
-                .signWith(getSigningKey(), SignatureAlgorithm.HS256).compact();
+                /*.signWith(getSigningKey(), SignatureAlgorithm.HS256)*/.compact();
     }
 
     /**
