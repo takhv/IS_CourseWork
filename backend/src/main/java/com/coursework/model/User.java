@@ -1,7 +1,5 @@
 package com.coursework.model;
 
-import com.coursework.model.Role;
-
 import jakarta.persistence.*;
 import lombok.*;
 import org.springframework.security.core.GrantedAuthority;
